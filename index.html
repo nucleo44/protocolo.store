@@ -264,7 +264,7 @@
                         </div>
                         <div>
                             <div id="player">
-                                <script src="https://fast.wistia.com/embed/medias/5mpd6f3zoj.jsonp" async></script>
+                                <!-- <script src="https://fast.wistia.com/embed/medias/5mpd6f3zoj.jsonp" async></script>
                                 <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
                                 <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
                                     <div class="wistia_responsive_wrapper"
@@ -274,6 +274,23 @@
                                             <div class="wistia_swatch"
                                                 style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
                                                 <img src="https://fast.wistia.com/embed/medias/5mpd6f3zoj/swatch"
+                                                    style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
+                                                    alt="" aria-hidden="true"
+                                                    onload="this.parentNode.style.opacity=1;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <script src="https://fast.wistia.com/embed/medias/z2gaq9m8ak.jsonp" async></script>
+                                <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                                <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+                                    <div class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                        <div class="wistia_embed wistia_async_z2gaq9m8ak videoFoam=true"
+                                            style="height:100%;position:relative;width:100%">
+                                            <div class="wistia_swatch"
+                                                style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                                                <img src="https://fast.wistia.com/embed/medias/z2gaq9m8ak/swatch"
                                                     style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
                                                     alt="" aria-hidden="true"
                                                     onload="this.parentNode.style.opacity=1;" />
@@ -453,12 +470,14 @@
         var videoTrigger = false;
         window._wq = window._wq || [];
         _wq.push({
-            id: '5mpd6f3zoj', onReady: function (video) {
+            id: 'z2gaq9m8ak', onReady: function (video) {
                 duration = video.duration();
+                video.mute();
                 video.play();
 
                 video.bind('play', function () {
                     if (document.querySelectorAll(".player-wrapper")[0].style.display == 'none') {
+                        video.unmute();
                         video.time(0);
                         return video.unbind;
                     }
@@ -471,7 +490,7 @@
                         document.querySelectorAll("#delay")[0].style.display = 'block';
                         document.querySelectorAll("#delay")[0].style.cursor = 'pointer';
                         document.querySelectorAll("#delay")[0].addEventListener('click', function (event) {
-                            window.location.href = atob("aHR0cHM6Ly9nby5wZXJmZWN0cGF5LmNvbS5ici9QUFUzOENLUDZVOA==");
+                            window.location.href = atob("aHR0cHM6Ly9nby5wZXJmZWN0cGF5LmNvbS5ici9QUFUzOENLUkk4VA==");
                         });
                         document.querySelectorAll(".vagas")[0].style.display = "block";
                         changeVagas();
@@ -495,8 +514,8 @@
         document.querySelectorAll("#player")[0].addEventListener('click', function (event) {
             if (document.querySelectorAll(".player-wrapper")[0].style.display != 'none') {
                 document.querySelectorAll(".player-wrapper")[0].style.display = 'none';
-                var video = Wistia.api("5mpd6f3zoj");
-                video.replaceWith("5mpd6f3zoj",
+                var video = Wistia.api("z2gaq9m8ak");
+                video.replaceWith("z2gaq9m8ak",
                     { transition: "none" }
                 );
                 video.play();
@@ -551,6 +570,46 @@
     </script>
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=501000728376977&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '996855437610585');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=996855437610585&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '448943477005531');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=448943477005531&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 </body>
 
